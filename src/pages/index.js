@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import HomeHero from '../components/HomeHero';
 import HomeSeoLaptop from '../components/HomeSeoLaptop';
 import SmallParallax from '../components/SmallParallax';
+import IndexLimitless from '../components/IndexLimitless';
 
 const Container = styled.div`
   margin-bottom: 4rem;
@@ -23,6 +24,11 @@ export default class IndexPage extends React.Component {
             <HomeSeoLaptop />
             <HomeSeoLaptop reverse />
             <SmallParallax />
+            <IndexLimitless />
+            <img
+              src="https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1440557653082-e8e186733eeb-1.jpg"
+              alt="nature"
+            />
           </Container>
         </section>
       </Layout>

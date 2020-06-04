@@ -8,7 +8,7 @@ const Container = styled.div`
   background-image: url('https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1452723312111-3a7d0db0e024.jpg');
 
   /* Set a specific height */
-  height: 70vh;
+  max-height: 70vh;
   .margin {
     min-height: 15vh;
   }
@@ -46,10 +46,9 @@ const Container = styled.div`
 const SmallParallax = () => {
   return (
     <Container>
-      <div className="margin" />
-      <div className="columns is-centered">
+      <div className="columns is-centered is-vcentered">
         <div className="column is-10">
-          <div className="columns is-centered is-multiline">
+          <div className="columns is-centered is-multiline is-vcentered">
             <div className="column is-12">
               <h1 className="subtitle is-1 ">Small Parallax Section</h1>
               <p>
