@@ -17,6 +17,11 @@ export default class HTML extends React.Component {
 
           {/* Add custom css or scripts here */}
           <link
+            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            rel="stylesheet"
+          />
+
+          <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
           />

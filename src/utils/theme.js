@@ -8,6 +8,7 @@ const darkAccent = '#3173DC';
 const darkShades = '#0A0A0A';
 
 export const theme = {
+  buttonColor: '#745cf9',
   // It can be liberally applied to your layout as its main identity.
   mainBrandColor,
   // Accent colors can be used to bring attention to design elements
@@ -38,8 +39,8 @@ export const theme = {
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Open Sans', sans-serif",
-  secondaryFontFamily: "'Open Sans', sans-serif",
+  primaryFontFamily: "'Raleway', sans-serif;",
+  secondaryFontFamily: "'Raleway', sans-serif;",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 

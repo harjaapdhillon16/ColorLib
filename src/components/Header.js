@@ -4,8 +4,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+import { theme } from '../utils/theme';
+
 const Section = styled.section`
-  padding: 1rem 1.5rem;
+  .heading {
+    color: ${theme.textColor} !important;
+    text-transform: none;
+    font-weight: 200 !important;
+  }
+  padding: 0rem 1.5rem;
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -24,15 +31,16 @@ const Section = styled.section`
     }
   }
   .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
     :hover {
       color: ${props => props.theme.darkAccent};
     }
   }
   .navbar-burger {
     background-color: #1c1323;
-    color: #fff;
+    color: #000;
     opacity: 0.6;
     border-radius: 4px;
   }
@@ -68,7 +76,9 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <h1 className="heading subtitle is-3 has-text-weight-regular">
+                  Shapely Demo
+                </h1>
               </Link>
               <a
                 href="#"
@@ -89,18 +99,15 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>
                 <Link to="/about" className="navbar-item">
-                  About
+                  Blog
                 </Link>
                 <Link to="/news" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
+                  Portfolio
                 </Link>
               </div>
             </div>
