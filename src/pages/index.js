@@ -7,9 +7,10 @@ import HomeHero from '../components/HomeHero';
 import HomeSeoLaptop from '../components/HomeSeoLaptop';
 import SmallParallax from '../components/SmallParallax';
 import IndexLimitless from '../components/IndexLimitless';
+import IndexProjects from '../components/IndexProjects';
+import WordpressThemeDownload from '../components/WordpressThemeDownload';
 
 const Container = styled.div`
-  margin-bottom: 4rem;
   text-align: center;
 `;
 
@@ -29,6 +30,8 @@ export default class IndexPage extends React.Component {
               src="https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1440557653082-e8e186733eeb-1.jpg"
               alt="nature"
             />
+            <IndexProjects />
+            <WordpressThemeDownload />
           </Container>
         </section>
       </Layout>

@@ -8,7 +8,8 @@ const Container = styled.div`
   background-image: url('https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1452723312111-3a7d0db0e024.jpg');
 
   /* Set a specific height */
-  max-height: 70vh;
+  min-height: 50vh;
+  padding: 4rem;
   .margin {
     min-height: 15vh;
   }
