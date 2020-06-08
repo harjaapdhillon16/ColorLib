@@ -9,12 +9,12 @@ const Section = styled.section`
   background-color: ${theme.lightShades};
 `;
 
-const BlogTopSection = () => {
+const BlogTopSection = ({ title }) => {
   return (
     <Section className="">
       <div className="hero-body">
         <div className="container">
-          <h2 className="subtitle is-3">Blog</h2>
+          <h2 className="subtitle is-3">{title}</h2>
         </div>
       </div>
     </Section>

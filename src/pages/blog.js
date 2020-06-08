@@ -3,28 +3,32 @@ import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import BlogTopSection from '../components/BlogTopSection';
+import TopSection from '../components/TopSection';
 import BlogLeftSide from '../components/BlogLeftSide';
+import BlogRightSide from '../components/BlogRightSide';
 
-const Container = styled.div``;
+const Container = styled.div`
+  width: 100% !important;
+`;
 
 export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section>
-          <Container>
-            <BlogTopSection />
-            <div className="container">
-              <div className="columns is-multiline">
-                <div className="column is-8">
-                  <BlogLeftSide />
-                </div>
+        <Container>
+          <TopSection title="Blog" />
+          <div className="container">
+            <div className="columns is-multiline">
+              <div className="column is-8">
+                <BlogLeftSide />
+              </div>
+              <div className="column is-4">
+                <BlogRightSide />
               </div>
             </div>
-          </Container>
-        </section>
+          </div>
+        </Container>
       </Layout>
     );
   }
